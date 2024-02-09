@@ -1,0 +1,320 @@
+html {
+    font-family: Abeezee, sans-serif;
+    font-size: 14pt;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    border-radius: 15px;
+    text-align: center;
+}
+
+:root {
+    --doo: #555555;
+    --linney-mooie: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#saagh-toshiaght {
+    position: fixed;
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(100, 100, 100, 0.5);
+    border-radius: 0;
+    z-index: 1;
+}
+
+#coyrle-toshiaght {
+    margin-top: 9rem;
+    background: white;
+    max-width: 400px;
+    border: 2px solid var(--doo);
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 20px;
+}
+
+#cramman-toshiaght {
+    height: 60px;
+    width: 260px;
+    margin-top: 2rem;
+    width: 150px;
+    background-color: white;
+    color: var(--doo);
+    font-size: 1.25em;
+    border: 3px solid var(--doo);
+    border-radius: 20px;
+}
+
+#saagh-corragyn {
+    margin-top: 1rem;
+}
+
+.saagh-corrag {
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+}
+
+.lipaid {
+    margin-bottom: 1rem;
+}
+
+.corrag {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.corrag input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.skirreyder {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.skirreyder:before {
+    position: absolute;
+    border-radius: 50%;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .skirreyder {
+    background-color: #2196F3;
+}
+
+input:focus + .skirreyder {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .skirreyder:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+#cleeah {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border: 6px solid transparent;
+}
+
+#greinnaghey {
+    font-size: 1.1rem;
+    padding: 2rem 0 1rem;
+}
+
+#caslys {
+    margin-left: auto;
+    margin-right: auto;
+    animation: agg-ec-jerrey 0.5s ease-out;
+    -webkit-animation: agg-ec-jerrey 0.5s ease-out;
+    z-index: 1;
+}
+
+#saagh-freggyrt, #saagh-focklyn {
+    padding: 0.5rem 0.5rem;
+    border: 2px solid grey;
+    min-height: 7rem;
+}
+
+#saagh-freggyrt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    user-select: none;
+}
+
+#saagh-freggyrt div, #saagh-focklyn div {
+    margin: 0.25rem;
+}
+
+#saagh-freggyrt div {
+    background-color: lightblue;
+}
+
+.fockle {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 2px solid grey;
+    user-select: none;
+}
+
+.fockle:hover {
+    cursor: pointer;
+}
+
+#cramman-freggyrt {
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: lightblue;
+    user-select: none;
+}
+
+#saagh-jeant {
+    visibility: hidden;
+    position: fixed;
+    border-radius: 0;
+    font-size: 1.25em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: white;
+    z-index: 2;
+}
+
+#teks-agg-jerrinagh {
+    padding-bottom: 1rem;
+}
+
+#agg-jerrinagh {
+    background-color: var(--doo);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 30pt;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 0px solid var(--linney-mooie);
+    animation: agg-ec-jerrey 0.5s ease-out, groin 1.5s infinite;
+    animation-delay: 0s, 0.4s;
+    -webkit-animation: agg-ec-jerrey 0.5s ease-out, groin 1.5s infinite;
+    -webkit-animation-delay: 0s, 0.4s;;
+}
+
+#cramman-reesht {
+    border: 3px solid var(--doo);
+    background-color: white;
+    font-size: 20pt;
+    width: 150px;
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+#boayrd-agg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 300px;
+    min-height: 200px;
+    padding: 1rem;
+    background-color: var(--doo);
+    color: white;
+}
+
+.aggyn {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.agg-ennym {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.nyn-agg {
+    background-color: var(--linney-mooie);
+    animation: daunsey .5s infinite alternate steps(3);
+    -webkit-animation: daunsey .5s infinite alternate steps(3);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.reihit {
+    animation: goll-stiagh 0.25s ease-out;
+    -webkit-animation: goll-stiagh 0.25s ease-out;
+}
+
+.cramman-reihit {
+    animation: goll-stiagh 0.25s ease-out;
+    -webkit-animation: goll-stiagh 0.25s ease-out;
+    pointer-events: none;
+}
+
+@keyframes agg-ec-jerrey {
+    0% {transform: scale(0);}
+    70% {transform: scale(1.4);}
+    100% {transform: scale(1);}
+}
+
+@keyframes groin {
+    0% {outline-width: 0px;}
+    70% {outline-width: 24px;}
+    100% {outline-width: 32px; outline-color: transparent;}
+}
+
+@keyframes goll-stiagh {
+    0% {transform: scale(1)}
+    70% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}
+
+@keyframes daunsey {
+    from {transform: rotate(-6deg) scale(0.95);}
+    to {transform: rotate(6deg) scale(1.05);}
+}
+
+@media screen and (min-width: 700px) {
+    #saagh-freggyrt, #saagh-focklyn {
+        padding: 1rem;
+    }
+}
